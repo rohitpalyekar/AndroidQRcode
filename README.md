@@ -1,7 +1,7 @@
 # AndroidQRcode
 
-
-The Demo Image of QR code is provided in Project "qrcode".
+ 
+The QR code Demo Image  "qrcode.png" is provided in Project.
 
 Json String as: 
 {
