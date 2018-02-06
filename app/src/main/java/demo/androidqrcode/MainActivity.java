@@ -47,19 +47,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void jasondecoder(String rawResult){
-        try {
-            String Decodedata = URLDecoder.decode(String.valueOf(rawResult), "utf-8");
-            System.out.println("Decodedata:" + Decodedata);
-            JSONObject obj = new JSONObject(Decodedata);
-            JSONObject biols = obj.getJSONObject("Bio Links");
+        if(!rawResult.isEmpty()) {
+            try {
+                String Decodedata = URLDecoder.decode(String.valueOf(rawResult), "utf-8");
+                System.out.println("Decodedata:" + Decodedata);
+                JSONObject obj = new JSONObject(Decodedata);
+                JSONObject biols = obj.getJSONObject("Bio Links");
 
-            name.setText(obj.getString("Name"));
-            desgination.setText(obj.getString("Destination"));
-            biolink.setText(biols.getString("Git"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
+                name.setText(obj.getString("Name"));
+                desgination.setText(obj.getString("Destination"));
+                biolink.setText(biols.getString("Git"));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
         }
     }
 
