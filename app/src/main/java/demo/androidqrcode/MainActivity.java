@@ -17,7 +17,6 @@ import java.net.URLDecoder;
 public class MainActivity extends AppCompatActivity {
     EditText name,desgination,biolink;
     Button qrscan;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
