@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidQRcode</string>
+    <string name="name">Name : </string>
+    <string name="designation">Designation :</string>
+    <string name="sample_codes">Sample Codes :</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="title_activity_barcode">barcode</string>
+</resources>
